@@ -2,7 +2,7 @@
     "name": "language-liquid",
     "displayName": "Liquid Languages Support",
     "description": "Liquid Languages Syntax Highlighter",
-    "version": "0.0.3",
+    "version": "0.1.0",
     "icon": "icon.png",
     "publisher": "neilding",
     "engines": {
@@ -12,16 +12,25 @@
         "Languages"
     ],
     "contributes": {
-        "languages": [{
-            "id": "liquid",
-            "aliases": ["HTML Liquid", "liquid"],
-            "extensions": [".liquid"],
-            "configuration": "./liquid.configuration.json"
-        }],
-        "grammars": [{
-            "language": "liquid",
-            "scopeName": "text.html.liquid",
-            "path": "./syntaxes/liquid.tmLanguage"
-        }]
+        "languages": [
+            {
+                "id": "liquid",
+                "aliases": [
+                    "HTML Liquid",
+                    "liquid"
+                ],
+                "extensions": [
+                    ".liquid"
+                ],
+                "configuration": "./liquid.configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "liquid",
+                "scopeName": "text.html.liquid",
+                "path": "./syntaxes/liquid.tmLanguage"
+            }
+        ]
     }
 }
